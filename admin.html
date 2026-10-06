@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administration | Kéa Fatima</title>
+    <link rel="icon" href="assets/logo-kea-fatima.jpg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="Kéa Fatima">
+        <img class="brand-logo" src="assets/logo-kea-fatima.jpg" alt="Logo Kéa Fatima" />
+        <span>
+          <strong>Kéa Fatima</strong>
+          <small>Administration des demandes</small>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="index.html#accueil">Accueil</a>
+        <a href="index.html#reservation">Réservation</a>
+        <a href="index.html#suivi-client">Suivi client</a>
+        <a href="admin.html" class="nav-cta">Admin</a>
+      </nav>
+      <button class="menu-btn" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main>
+      <section id="adminLogin" class="admin-login">
+        <form id="adminLoginForm" class="admin-login-card">
+          <img src="assets/logo-kea-fatima.jpg" alt="Logo Kéa Fatima" />
+          <p class="eyebrow">Connexion admin</p>
+          <h1>Accès réservé à l'agence</h1>
+          <p>Utilisez le mot de passe de démonstration pour accéder au tableau de bord.</p>
+          <label>
+            Mot de passe
+            <input type="password" name="password" placeholder="Mot de passe admin" required />
+          </label>
+          <button class="btn primary" type="submit">Se connecter</button>
+          <p id="adminLoginStatus" class="form-status" role="status"></p>
+          <small>Démo : admin123</small>
+        </form>
+      </section>
+
+      <div id="adminApp" class="admin-app" hidden>
+        <section class="admin-hero">
+          <div>
+            <p class="eyebrow">Espace agence</p>
+            <h1>Tableau de bord des demandes clients</h1>
+            <p>
+              Cette page permet à l'agence de traiter les réservations, demandes
+              d'information, réclamations et messages liés aux départs Comores-Madagascar.
+            </p>
+          </div>
+          <img src="assets/logo-kea-fatima.jpg" alt="Logo Kéa Fatima" />
+        </section>
+
+        <section class="section admin-stats-section">
+          <div id="adminStats" class="admin-stats"></div>
+        </section>
+
+        <section class="section admin-board-section">
+          <div class="section-heading">
+            <p class="eyebrow">Demandes enregistrées</p>
+            <h2>Traiter et répondre aux clients</h2>
+            <p>
+              Les données sont stockées localement dans le navigateur pour la démonstration.
+              Les réponses écrites ici sont visibles depuis le suivi client.
+            </p>
+          </div>
+
+          <div class="admin-controls">
+            <label>
+              Rechercher
+              <input id="adminSearch" type="search" placeholder="Nom, téléphone, ligne ou numéro..." />
+            </label>
+            <div class="admin-control-actions">
+              <button id="exportCsvBtn" class="btn secondary light" type="button">Exporter CSV</button>
+              <button id="printBtn" class="btn secondary light" type="button">Imprimer</button>
+              <button id="adminLogoutBtn" class="btn secondary light" type="button">Déconnexion</button>
+            </div>
+          </div>
+
+          <div class="admin-toolbar">
+            <button class="admin-tab active" type="button" data-filter="all">Toutes</button>
+            <button class="admin-tab" type="button" data-filter="Nouveau">Nouvelles</button>
+            <button class="admin-tab" type="button" data-filter="En traitement">En traitement</button>
+            <button class="admin-tab" type="button" data-filter="Confirmé">Confirmées</button>
+            <button class="admin-tab" type="button" data-filter="Résolu">Résolues</button>
+          </div>
+
+          <div id="adminTicketList" class="admin-ticket-list"></div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Kéa Fatima. Administration de la communication client.</p>
+      <a href="index.html">Retour au site</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
