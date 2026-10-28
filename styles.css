@@ -173,7 +173,7 @@ textarea {
 .hero-bg {
   background:
     linear-gradient(90deg, rgba(3, 26, 43, 0.94), rgba(7, 59, 86, 0.76) 48%, rgba(2, 21, 57, 0.05)),
-    url("/Kea_Fatima/assets/hero-kea-fatima.png") center / cover;
+    url("hero-kea-fatima.png") center / cover;
   transform: scale(1.02);
 }
 
