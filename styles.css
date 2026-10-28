@@ -1100,7 +1100,7 @@ textarea:focus {
   padding: 42px 18px;
   background:
     linear-gradient(rgba(6, 43, 103, 0.74), rgba(6, 43, 103, 0.72)),
-    url("/Kea_Fatima/assets/hero-kea-fatima.png") center / cover;
+    url("hero-kea-fatima.png") center / cover;
 }
 
 .admin-login-card {
@@ -1145,7 +1145,7 @@ textarea:focus {
   color: white;
   background:
     linear-gradient(110deg, rgba(5, 45, 66, 0.96), rgba(8, 126, 155, 0.78)),
-    url("/Kea_Fatima/assets/hero-kea-fatima.png") center / cover;
+    url("hero-kea-fatima.png") center / cover;
 }
 
 .admin-hero h1 {
